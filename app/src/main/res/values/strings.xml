@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">AplicacionSenderismo</string>
+    <string name="app_name">HikingApp</string>
+    <string name="addNewRoute">Add New Route</string>
+    <string name="viewMyRoutes">View My Routes</string>
+    <string name="support">Support</string>
+    <string name="aboutUs">About Us</string>
+    <string name="exit">Close App</string>
+    <string name="description">This is a hiking app designed for those who are true enthusiasts of hiking and want to track all their progress and share their favourite routes with everyone.\nAuthors: Pablo Arques López and Sergio Guillamón Hernández\nv0.5</string>
+    <string name="contactSupport">Contact Support</string>
+    <string name="hintNombreRuta">name of the rute...</string>
 </resources>

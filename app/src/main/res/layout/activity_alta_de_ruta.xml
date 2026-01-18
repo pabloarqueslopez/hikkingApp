@@ -13,16 +13,18 @@
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/lblNombreRuta"
             style="@style/LabelStyle"
             android:text="Nombre de la ruta" />
 
         <EditText
-            android:id="@+id/nombreRuta"
+            android:id="@+id/txtBoxNombreRuta"
             style="@style/InputStyle"
-            android:hint="nombre de la ruta..."
+            android:hint="@string/hintNombreRuta"
             android:inputType="text" />
 
         <TextView
+            android:id="@+id/lblLocalizacion"
             style="@style/LabelStyle"
             android:text="Localización o población" />
 
@@ -33,6 +35,7 @@
             android:inputType="text" />
 
         <TextView
+            android:id="@+id/lblTipoRuta"
             style="@style/LabelStyle"
             android:text="Tipo de ruta" />
 
@@ -58,6 +61,7 @@
         </RadioGroup>
 
         <TextView
+            android:id="@+id/lblDificultad"
             style="@style/LabelStyle"
             android:text="Dificultad" />
 
@@ -69,6 +73,7 @@
             android:stepSize="1.0" />
 
         <TextView
+            android:id="@+id/lblDistancia"
             style="@style/LabelStyle"
             android:text="Distancia (km)" />
 
@@ -79,6 +84,7 @@
             android:hint="0.0" />
 
         <TextView
+            android:id="@+id/lblDescripcion"
             style="@style/LabelStyle"
             android:text="Descripción" />
 
@@ -98,6 +104,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/lblNotas"
             style="@style/LabelStyle"
             android:text="Notas" />
 

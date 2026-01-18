@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Senderismo</string>
+    <string name="addNewRoute">Añadir Ruta Nueva</string>
+    <string name="viewMyRoutes">Ver Mis Rutas</string>
+    <string name="support">Ayuda</string>
+    <string name="aboutUs">Acerca de Nosotros</string>
+    <string name="exit">Salir de la App</string>
+    <string name="description">Esta es una aplicación de senderismo diseñada para aquellos que son unos verdaderos entusiastas del senderismo y quieran ver todo su progreso y compartir sus rutas favoritas con todo el mundo.\nAutores: Pablo Arques López y Sergio Guillamón Hernández\nv0.5</string>
+    <string name="contactSupport">Contactar con soporte</string>
+    <string name="hintNombreRuta">Nombre de la ruta</string>
+
+</resources>
