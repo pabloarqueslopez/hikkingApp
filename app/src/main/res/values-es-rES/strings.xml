@@ -9,5 +9,18 @@
     <string name="description">Esta es una aplicación de senderismo diseñada para aquellos que son unos verdaderos entusiastas del senderismo y quieran ver todo su progreso y compartir sus rutas favoritas con todo el mundo.\nAutores: Pablo Arques López y Sergio Guillamón Hernández\nv0.5</string>
     <string name="contactSupport">Contactar con soporte</string>
     <string name="hintNombreRuta">Nombre de la ruta</string>
-
+    <string name="lblNombreRuta">Nombre de la ruta</string>
+    <string name="lblLocalizacion">Localización o población</string>
+    <string name="hintLocalizacion">Localización</string>
+    <string name="lblTipoRuta">Tipo de ruta</string>
+    <string name="circular">Circular</string>
+    <string name="linear">Lineal</string>
+    <string name="lblDificultad">Dificultad</string>
+    <string name="nBoxDistancia">Distancia (km)</string>
+    <string name="lblDescripcion">Descripción</string>
+    <string name="descripcionHint">Escribe los detalles aquí...</string>
+    <string name="lblNotas">Notas</string>
+    <string name="notasHint">Notas adicionales...</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="guardarRuta">Guardar ruta</string>
 </resources>

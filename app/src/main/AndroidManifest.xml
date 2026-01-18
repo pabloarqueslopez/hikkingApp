@@ -21,6 +21,9 @@
         android:theme="@style/Theme.AplicacionSenderismo"
         tools:targetApi="31">
         <activity
+            android:name=".RutasRegistradas"
+            android:exported="false" />
+        <activity
             android:name=".AcercaDe"
             android:exported="false" />
         <activity

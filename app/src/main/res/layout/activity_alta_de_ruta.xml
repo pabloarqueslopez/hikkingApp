@@ -15,7 +15,7 @@
         <TextView
             android:id="@+id/lblNombreRuta"
             style="@style/LabelStyle"
-            android:text="Nombre de la ruta" />
+            android:text="@string/lblNombreRuta" />
 
         <EditText
             android:id="@+id/txtBoxNombreRuta"
@@ -26,18 +26,18 @@
         <TextView
             android:id="@+id/lblLocalizacion"
             style="@style/LabelStyle"
-            android:text="Localización o población" />
+            android:text="@string/lblLocalizacion" />
 
         <EditText
             android:id="@+id/localizacion"
             style="@style/InputStyle"
-            android:hint="ubicación..."
+            android:hint="@string/hintLocalizacion"
             android:inputType="text" />
 
         <TextView
             android:id="@+id/lblTipoRuta"
             style="@style/LabelStyle"
-            android:text="Tipo de ruta" />
+            android:text="@string/lblTipoRuta"/>
 
         <RadioGroup
             android:id="@+id/tipoRuta"
@@ -50,20 +50,20 @@
                 android:id="@+id/rBtnCircular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Circular" />
+                android:text="@string/circular" />
 
             <RadioButton
                 android:id="@+id/rBtnLineal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:text="Lineal" />
+                android:text="@string/linear" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/lblDificultad"
             style="@style/LabelStyle"
-            android:text="Dificultad" />
+            android:text="@string/lblDificultad" />
 
         <RatingBar
             android:id="@+id/ratingBar"
@@ -75,7 +75,7 @@
         <TextView
             android:id="@+id/lblDistancia"
             style="@style/LabelStyle"
-            android:text="Distancia (km)" />
+            android:text="@string/nBoxDistancia"/>
 
         <EditText
             android:id="@+id/nBoxDistancia"
@@ -86,7 +86,7 @@
         <TextView
             android:id="@+id/lblDescripcion"
             style="@style/LabelStyle"
-            android:text="Descripción" />
+            android:text="@string/lblDescripcion" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -98,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
-                android:hint="Escribe aquí los detalles..."
+                android:hint="@string/descripcionHint"
                 android:inputType="textMultiLine"
                 android:lines="3" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -106,12 +106,12 @@
         <TextView
             android:id="@+id/lblNotas"
             style="@style/LabelStyle"
-            android:text="Notas" />
+            android:text="@string/lblNotas" />
 
         <EditText
             android:id="@+id/txtBoxNotas"
             style="@style/InputStyle"
-            android:hint="Notas adicionales"
+            android:hint="@string/notasHint"
             android:inputType="text" />
 
         <Switch
@@ -119,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Favoritos" />
+            android:text="@string/favoritos" />
 
         <Button
             android:id="@+id/btnGuardar"
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
-            android:text="Guardar esta ruta" />
+            android:text="@string/guardarRuta" />
 
     </LinearLayout>
 </ScrollView>

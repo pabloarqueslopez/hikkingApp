@@ -7,5 +7,19 @@
     <string name="exit">Close App</string>
     <string name="description">This is a hiking app designed for those who are true enthusiasts of hiking and want to track all their progress and share their favourite routes with everyone.\nAuthors: Pablo Arques López and Sergio Guillamón Hernández\nv0.5</string>
     <string name="contactSupport">Contact Support</string>
-    <string name="hintNombreRuta">name of the rute...</string>
+    <string name="hintNombreRuta">Route name...</string>
+    <string name="lblNombreRuta">Route name</string>
+    <string name="lblLocalizacion">Location</string>
+    <string name="hintLocalizacion">Location...</string>
+    <string name="lblTipoRuta">Route type</string>
+    <string name="circular">Circular</string>
+    <string name="linear">Linear</string>
+    <string name="lblDificultad">Difficulty</string>
+    <string name="nBoxDistancia">Distance (km)</string>
+    <string name="lblDescripcion">Description</string>
+    <string name="descripcionHint">Write the details here...</string>
+    <string name="lblNotas">Notes</string>
+    <string name="notasHint">Additional notes...</string>
+    <string name="favoritos">Favourites</string>
+    <string name="guardarRuta">Save route</string>
 </resources>
