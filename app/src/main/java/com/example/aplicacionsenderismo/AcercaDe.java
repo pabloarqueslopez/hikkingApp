@@ -1,8 +1,8 @@
 package com.example.aplicacionsenderismo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -11,33 +11,30 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-
-    Button buttonAboutUs;
+public class AcercaDe extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_acerca_de);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        buttonAboutUs = findViewById(R.id.aboutUs);
+        Button btnContactSupport = findViewById(R.id.contactSupport);
 
-        buttonAboutUs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openAboutUs(v);
-            }
+
+        btnContactSupport.setOnClickListener(v -> {
+            String emailAddress = "hikingApp@gmail.com";
+
+            Intent intent = new Intent(Intent.ACTION_SENDTO);
+            intent.setData(Uri.parse("mailto:" + emailAddress));
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Question about the app");
+
+            startActivity(intent);
         });
-    }
-
-    public void openAboutUs(View view){
-        Intent intent = new Intent(this, AcercaDe.class);
-        startActivity(intent);
     }
 }
