@@ -8,6 +8,8 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
+import com.example.aplicacionsenderismo.Models.Ruta;
+
 @Dao
 public interface RutaDao {
 
@@ -28,4 +30,10 @@ public interface RutaDao {
 
     @Query("SELECT * FROM ruta WHERE nombreRuta LIKE '%' || :nombreRuta || '%'")
     List<Ruta> buscarRutaPorNombre();
+
+    @Query("SELECT * FROM ruta WHERE id = :id")
+    Ruta obtenerRutaPorId(int id);
+
+
+
 }

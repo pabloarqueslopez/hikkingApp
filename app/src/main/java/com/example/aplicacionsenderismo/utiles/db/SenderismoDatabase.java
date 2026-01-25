@@ -5,15 +5,21 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.aplicacionsenderismo.DAO.RutaDAO;
+import com.example.aplicacionsenderismo.DaoPuntoInteres;
 import com.example.aplicacionsenderismo.Models.Ruta;
+import com.example.aplicacionsenderismo.PuntoDeInteres;
+import com.example.aplicacionsenderismo.RutaDao;
 
 // Nota: Asegúrate de tener creadas las clases Ruta y RutaDao
-@Database(entities = {Ruta.class}, version = 1)
+@Database(entities = {Ruta.class, PuntoDeInteres.class}, version = 2)
 public abstract class SenderismoDatabase extends RoomDatabase {
 
+
+
     // Método abstracto para obtener el DAO
-    public abstract RutaDAO rutaDAO();
+    public abstract RutaDao rutaDao();
+    public abstract DaoPuntoInteres DaoPuntoInteres();
+
 
     // La instancia única (Singleton)
     private static volatile SenderismoDatabase INSTANCE;
@@ -31,5 +37,5 @@ public abstract class SenderismoDatabase extends RoomDatabase {
             }
         }
         return INSTANCE;
-    }
+
 }

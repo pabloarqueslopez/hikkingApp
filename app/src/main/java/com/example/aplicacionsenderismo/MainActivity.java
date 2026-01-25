@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             SenderismoDatabase db = SenderismoDatabase.getDatabase(this);
 
             // Al pedir una consulta, obligas a Room a verificar/crear la estructura
-            int cantidad = db.rutaDAO().obtenerTodasRutas().size();
+            int cantidad = db.rutaDao().obtenerTodasRutas().size();
 
             Log.d("DB_TEST", "La base de datos está lista. Rutas actuales: " + cantidad);
         }).start();

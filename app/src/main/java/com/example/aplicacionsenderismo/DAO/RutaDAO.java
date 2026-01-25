@@ -30,4 +30,9 @@ public interface RutaDAO {
 
     @Query("SELECT * FROM ruta WHERE nombreRuta LIKE '%' || :nombre || '%'")
     List<Ruta> buscarRutaPorNombre();
+
+    @Query("SELECT * FROM ruta WHERE id = :id")
+    Ruta obtenerRutaPorId(int id);
+
+
 }

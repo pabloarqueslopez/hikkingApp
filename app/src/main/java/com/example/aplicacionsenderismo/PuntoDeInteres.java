@@ -1,6 +1,16 @@
 package com.example.aplicacionsenderismo;
 
+import static androidx.room.ForeignKey.CASCADE;
+
+import androidx.room.Entity;
+import androidx.room.ForeignKey;
+import androidx.room.PrimaryKey;
+
+import com.example.aplicacionsenderismo.Models.Ruta;
+
+@Entity(tableName = "puntos_interes", foreignKeys = @ForeignKey(entity = Ruta.class, parentColumns = "id", childColumns = "ruta_id", onDelete = CASCADE))
 public class PuntoDeInteres {
+    @PrimaryKey(autoGenerate = true)
     private int id;
     private String nombre;
     private String ruta_id;
@@ -39,5 +49,29 @@ public class PuntoDeInteres {
 
     public String getFoto() {
         return foto;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setRuta_id(String ruta_id) {
+        this.ruta_id = ruta_id;
+    }
+
+    public void setLatitud(String latitud) {
+        this.latitud = latitud;
+    }
+
+    public void setLongitud(String longitud) {
+        this.longitud = longitud;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 }

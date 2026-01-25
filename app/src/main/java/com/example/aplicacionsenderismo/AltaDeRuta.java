@@ -34,7 +34,7 @@ public class AltaDeRuta extends AppCompatActivity {
         // 2. Ejecutamos en un hilo secundario (OBLIGATORIO en Android)
         new Thread(() -> {
             SenderismoDatabase db = SenderismoDatabase.getDatabase(getApplicationContext());
-            db.rutaDAO().insertar(miRuta);
+            db.rutaDao().insertar(miRuta);
 
             // 3. Si necesitas avisar a la UI, usa runOnUiThread
             runOnUiThread(() -> {
