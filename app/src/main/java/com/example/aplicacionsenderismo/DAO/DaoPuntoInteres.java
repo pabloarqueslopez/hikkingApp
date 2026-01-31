@@ -1,7 +1,9 @@
-package com.example.aplicacionsenderismo;
+package com.example.aplicacionsenderismo.DAO;
 
 import androidx.room.Insert;
 import androidx.room.Query;
+
+import com.example.aplicacionsenderismo.Models.PuntoDeInteres;
 
 import java.util.List;
 

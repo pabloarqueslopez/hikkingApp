@@ -26,17 +26,16 @@ public class AltaDeRuta extends AppCompatActivity {
         });
     }
 
-    // Ejemplo de inserción en una Activity
+
     public void guardarNuevaRuta() {
-        // 1. Creamos el objeto con tus datos
+
         Ruta miRuta = new Ruta("Ruta del Cares", "Asturias", 1, 2, 12.5f, "Muy bonita", "Llevar agua", true);
 
-        // 2. Ejecutamos en un hilo secundario (OBLIGATORIO en Android)
+
         new Thread(() -> {
             SenderismoDatabase db = SenderismoDatabase.getDatabase(getApplicationContext());
             db.rutaDao().insertar(miRuta);
 
-            // 3. Si necesitas avisar a la UI, usa runOnUiThread
             runOnUiThread(() -> {
                 Toast.makeText(this, "¡Ruta guardada!", Toast.LENGTH_SHORT).show();
             });

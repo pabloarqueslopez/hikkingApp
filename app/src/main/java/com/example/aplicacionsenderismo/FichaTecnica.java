@@ -13,6 +13,9 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.aplicacionsenderismo.DAO.DaoPuntoInteres;
+import com.example.aplicacionsenderismo.DAO.RutaDao;
+import com.example.aplicacionsenderismo.Models.PuntoDeInteres;
 import com.example.aplicacionsenderismo.Models.Ruta;
 import com.example.aplicacionsenderismo.utiles.db.SenderismoDatabase;
 
