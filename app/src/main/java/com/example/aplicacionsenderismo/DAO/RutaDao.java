@@ -11,7 +11,7 @@ import androidx.room.Update;
 import com.example.aplicacionsenderismo.Models.Ruta;
 
 @Dao
-public interface RutaDAO {
+public interface RutaDao {
 
     @Insert
     void insertar(Ruta ruta);
@@ -28,6 +28,10 @@ public interface RutaDAO {
     @Query("SELECT * FROM ruta WHERE dificultad = :dificultad")
     List<Ruta> obtenerRutaPorDificultad();
 
-    @Query("SELECT * FROM ruta WHERE nombreRuta LIKE '%' || :nombre || '%'")
+    @Query("SELECT * FROM ruta WHERE nombreRuta LIKE '%' || :nombreRuta || '%'")
     List<Ruta> buscarRutaPorNombre();
+
+    @Query("SELECT * FROM ruta WHERE id = :id")
+    Ruta obtenerRutaPorId(int id);
+
 }
