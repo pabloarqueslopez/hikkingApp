@@ -22,4 +22,8 @@
     <string name="notasHint">Additional notes...</string>
     <string name="favoritos">Favourites</string>
     <string name="guardarRuta">Save route</string>
+    <string name="tituloRuta">Route name</string>
+    <string name="tiempo">Time</string>
+    <string name="filtroRutas">Difficulty filter</string>
+    <string name="lblResultado">Result:</string>
 </resources>
