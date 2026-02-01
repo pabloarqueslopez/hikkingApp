@@ -42,7 +42,22 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonAboutUs = findViewById(R.id.aboutUs);
         Button buttonExit = findViewById(R.id.exit);
+        Button buttonAltaRuta = findViewById(R.id.addNewRoute);
+        Button buttonVerRutasRegistradas = findViewById(R.id.viewMyRoutes);
 
+        buttonVerRutasRegistradas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openVerRutasRegistradas(v);
+            }
+        });
+
+        buttonAltaRuta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAltaRUta(v);
+            }
+        });
 
         buttonAboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +76,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void openAboutUs(View view){
         Intent intent = new Intent(this, AcercaDe.class);
+        startActivity(intent);
+    }
+
+    public void openAltaRUta(View view){
+        Intent intent = new Intent(this, AltaDeRuta.class);
+        startActivity(intent);
+    }
+
+    public void openVerRutasRegistradas(View view){
+        Intent intent = new Intent(this, RutasRegistradas.class);
         startActivity(intent);
     }
 

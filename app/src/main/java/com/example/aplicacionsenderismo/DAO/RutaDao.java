@@ -25,11 +25,11 @@ public interface RutaDao {
     @Query("SELECT * FROM ruta ORDER BY id DESC")
     List<Ruta> obtenerTodasRutas();
 
-    @Query("SELECT * FROM ruta WHERE dificultad = :dificultad")
-    List<Ruta> obtenerRutaPorDificultad();
+    @Query("SELECT * FROM ruta WHERE dificultad BETWEEN :min AND :max")
+    List<Ruta> listadoFiltroDificultad (int min, int max);
 
-    @Query("SELECT * FROM ruta WHERE nombreRuta LIKE '%' || :nombreRuta || '%'")
-    List<Ruta> buscarRutaPorNombre();
+    /*@Query("SELECT * FROM ruta WHERE nombreRuta LIKE '%' || :nombreRuta || '%'")
+    List<Ruta> buscarRutaPorNombre();*/
 
     @Query("SELECT * FROM ruta WHERE id = :id")
     Ruta obtenerRutaPorId(int id);

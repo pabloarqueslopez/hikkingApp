@@ -26,4 +26,10 @@
     <string name="tiempo">Time</string>
     <string name="filtroRutas">Difficulty filter</string>
     <string name="lblResultado">Result:</string>
+
+    <string-array name="niveles_dificultad">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+    </string-array>
 </resources>
